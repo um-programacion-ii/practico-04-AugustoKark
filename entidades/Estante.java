@@ -54,6 +54,8 @@ public class Estante implements Despensable {
 
 
 
+
+
     @Override
     public void sacar(int cantidad) throws VidaUtilInsuficienteException, StockInsuficienteException {
 
@@ -68,4 +70,6 @@ public class Estante implements Despensable {
     public int getCantidadDisponible() {
         return 0;
     }
+
+
 }

@@ -33,9 +33,13 @@ public class CocinaService {
          List<Despensable> ingredientes = receta.getIngredientes();
          boolean sePuedePreparar = true;
          DespensaService despensaService = new DespensaService(despensa);
+         EstanteService estanteService = new EstanteService(Estante.getInstancia());
 
          if (!despensaService.verificarStock(ingredientes)) {
 
+             sePuedePreparar = false;
+         }
+         if (!estanteService.verificarVidaUtil(receta.getUtensilios())) {
              sePuedePreparar = false;
          }
 

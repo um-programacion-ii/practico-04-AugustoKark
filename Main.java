@@ -31,7 +31,7 @@ public class Main {
 
 
             // Crear utensilios
-            Utensilio bowl = new Utensilio("Bowl", 50);
+            Utensilio bowl = new Utensilio("Bowl", 10);
             Utensilio batidora = new Utensilio("Batidora", 50);
             Utensilio horno = new Utensilio("Horno", 50);
             Utensilio sarten = new Utensilio("Sarten", 500);
